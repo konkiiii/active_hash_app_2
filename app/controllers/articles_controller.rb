@@ -18,6 +18,6 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:title,:text,:genre_id, :prefectures_genre_id)
+    params.require(:article).permit(:title,:text,:genre_id,:prefectures_genre_id)
   end
 end
